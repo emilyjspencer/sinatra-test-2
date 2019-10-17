@@ -1,0 +1,46 @@
+
+<h1>Welcome!<h1>
+<h3>If you tell me your name, I can say hi!</h3>
+<div style="border: 30px sold pink">
+<%if @user %>
+"Hi! Welcome! Bonjour! Guten Tag! Hola! Hallo! My name is <%=@user.upcase %>"
+<% else %>
+  <form action="/hello">
+  <placeholder="Enter a name">
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+  </form>
+<%end %>
+<img src="http://localhost:4567/Images/alpaca.gif">
+
+</div>
+
+<style>
+
+h1 {
+    text-align: center;
+    color : #ab0f7c;
+}
+
+h3 {
+    text-align: center;
+    color: #945681;
+}
+
+form {
+    text-align: center;
+    color: #945681;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%:
+}
+
+</style>
